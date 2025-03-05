@@ -47,11 +47,11 @@ jobs:
 
       - name: Run SonarCloud Scan
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ d4eacc06afaf80d701921c79ff5fdc35a52e9f86 }}
         run: |
           ~/.sonar-scanner/bin/sonar-scanner \
-            -Dsonar.projectKey=your_github_username_sonarcloud-demo \
-            -Dsonar.organization=your_sonarcloud_organization \
+            -Dsonar.projectKey=eccelenza_sonarcloud
+            -Dsonar.organization=eccelenza
             -Dsonar.sources=. \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=$SONAR_TOKEN
