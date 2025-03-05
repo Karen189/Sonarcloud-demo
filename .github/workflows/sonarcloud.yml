@@ -47,7 +47,7 @@ jobs:
 
       - name: Run SonarCloud Scan
         env:
-          SONAR_TOKEN: ${{ d4eacc06afaf80d701921c79ff5fdc35a52e9f86 }}
+          SONAR_TOKEN: $d4eacc06afaf80d701921c79ff5fdc35a52e9f86 
         run: |
           ~/.sonar-scanner/bin/sonar-scanner \
             -Dsonar.projectKey=eccelenza_sonarcloud
